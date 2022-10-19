@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">flight_name</th>
+                            <th scope="col">origin</th>
+                            <th scope="col">destination</th>
+                            <th scope="col">capacity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let i of root">
+                            <td>{{i.flight_name}}</td>
+                            <td>{{i.origin}}</td>
+                            <td>{{i.destination}}</td>
+                            <td>{{i.capacity}}</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
