@@ -8,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class AddflightComponent implements OnInit {
 
   constructor() { }
-  flightname=""
+  flight_name=""
   origin=""
   destination=""
   capacity=""
   readvalues=()=>{
     let data={
-      "flightname":this.flightname,
+      "fligh_tname":this.flight_name,
       "origin":this.origin,
       "destination":this.destination,
       "capacity":this.capacity
