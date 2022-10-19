@@ -1,0 +1,28 @@
+
+<div class="container">
+    <div class="row g-3">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">flight name</label>
+                    <input placeholder="flight name" class="form-control" type="text" name="flightname"[(ngModel)]="flightname" id="">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">origin</label>
+                    <input placeholder="origin" class="form-control" type="text" name="origin"[(ngModel)]="origin" id="">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">destination</label>
+                    <input placeholder="destination" class="form-control" type="text" name="destination"[(ngModel)]="destination" id="">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">capacity</label>
+                    <input placeholder="capacity" class="form-control" type="text" name="capacity"[(ngModel)]="capacity" id="">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-success"(click)="readvalues()">submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
