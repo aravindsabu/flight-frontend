@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-viewallflight',
@@ -7,8 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewallflightComponent implements OnInit {
 
-  constructor() { }
-  root=[{"id":1,"flight_name":"air india","origin":"india","destination":"austrlia","capacity":300},{"id":2,"flight_name":"air-austrlia","origin":"austrlia","destination":"india","capacity":400},{"id":3,"flight_name":"air-africa","origin":"africa","destination":"pakistan","capacity":200},{"id":4,"flight_name":"fisher bull","origin":"oman","destination":"africa","capacity":500}]
+  constructor(private myapi:ApiService) { 
+    this.fetchData()
+  }
+  fetchData=()=>{
+    this.myapi.viewallflights().subscribe(
+      (data)=>{
+        this.root=data
+      }
+    )
+  }
+  root:any=[]
   ngOnInit(): void {
   }
 
